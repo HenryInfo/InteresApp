@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/txt_registro_facebook"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:text="@string/txt_registro_o_mail"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_weight="0.75"
+            android:gravity="center"
+            android:hint="@string/txt_registro_correo" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_txt_user"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/txt_registro_user"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:hint="@string/txt_registro_password"
+            android:id="@+id/editText2"
+            android:layout_weight="0.75" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="datetime"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/txt_registro_fecnacimiento"
+            android:id="@+id/edit_txt_password"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/sexo"
+            android:id="@+id/editText3"
+            android:layout_weight="0.75"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.01">
+
+        <Button
+            android:id="@+id/btn_login_ingresar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/btn_login_ingresar"
+            android:layout_gravity="center" />
+        </LinearLayout>
+
+
+
+</LinearLayout>
